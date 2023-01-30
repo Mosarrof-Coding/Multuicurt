@@ -1,0 +1,15 @@
+/* chatboot*/
+@import "../variable/variable";
+#chatboot{
+    width: 60px;
+    height: 60px;
+    background: var(--theme-deafult);
+    border-radius: 50%;
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}

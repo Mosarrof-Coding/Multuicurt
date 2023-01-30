@@ -1,0 +1,163 @@
+@import "../mixin/mixin";
+/* collection part.........*/
+#collection{
+    width: 100%;
+    padding: 65px 0;
+    background: rgb(252, 154, 154);
+    .container{
+        .row{
+            .top-heading{
+                text-align: center;
+                h4{
+                    background: transparent;
+                }
+                h2{
+                    position: relative;
+                    &::after{
+                        @include Aafter;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #777; 
+                    max-width: 676px;
+                    padding-bottom: 30px;
+                }
+            }
+            .collect-img{
+                width: 100%;
+                display: flex !important;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .main-collection{
+                    background: rgb(56, 204, 249);
+                    flex-basis: 25%;
+                    padding: 0 12px;
+                    .display{
+                        width: 320px;
+                        height: 435px;
+                        display: block;
+                        position: relative;
+                        a{
+                            display: block;
+                            width: 320px;
+                            height: 435px;
+                            animation: zoomin .2s linear;
+                            img.active{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                
+                            }
+                            img{
+                                display: none;
+                            }
+                        }
+                        @include new-product;
+                        @include on-sale;
+                        .thumb{
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 15%;
+                            display: flex;
+                            flex-direction: column-reverse;
+                            .min_img{
+                                width: 100%;
+                                margin: 1px 0;
+                                img{
+                                    width: 100%;
+                                    height: fit-content;
+                                    filter: opacity(.5);
+                                }
+                                img.actv{
+                                    filter: opacity(1);
+                                }
+                            }
+                        }
+                        .r-icn_ovrly{
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            width: 10%;
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            opacity: 0;
+                            visibility: hidden;
+                            .icon_right{
+                                width: 100%;
+                                height: 20%;
+                                text-align: center;
+                                .Ancr{
+                                    width: 100%;
+                                    height: 20%;
+                                    padding: 4px 0;
+                                    i{
+                                        color: #6f6f6f;
+                                        font-size: 18px;
+                                        transition: all linear .3s;
+                                        &:hover{
+                                            color:var(--theme-deafult);
+                                        }
+                                    }
+                                    .fi-rr-shopping-cart{
+                                        display: block;
+                                        transform: rotateY(-180deg);
+        
+                                    }
+                                    .fi-rr-refresh{
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover .r-icn_ovrly{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    .rating{
+                        svg{
+                            width: 18px;
+                            height: 17px;
+                        }
+                        h5{
+                            color:#777;
+                        }
+                        h4{
+                            font-size: 18px;
+                            color: #222;
+                            font-weight: 700;
+                            margin-bottom: 0;
+                            transition: all .5s ease;
+                            span{
+                                font-size: 14px;
+                                font-weight: 400;
+                                color:#aaa;
+                                letter-spacing: .03em;
+                            }
+                        }
+                    }
+                    .dot-ul{
+                        padding-top: 7px;
+                        .lidot{
+                            display: inline-block;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 100%;
+                            margin-right: 5px;
+                            transition: all .1s ease;
+                            cursor: pointer;
+                            vertical-align: middle;
+                            background: red;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+/*---------------------------------------------------- header part-*/
+#header{
+    background: #f8f8f8;
+    .container{
+        .row{
+            .hedr-6a{
+                ul{
+                    margin-bottom: 0;
+                    li{
+                        padding: 14px 0;
+                        color: #999;
+                        font-size: 14px;
+                        padding-right: 25px;
+                        i{
+                            font-size: 14px;
+                            padding-right: 5px;
+                            color:var(--theme-deafult);
+                        }
+                    }
+                }
+            }
+            .hedr-6b{
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                ul{
+                    margin-bottom: 0;
+                    text-align: right;
+                    li{
+                        color: #999;
+                        margin-left: 25px;
+                        font-size: 14px;
+                        padding: 14px 0;
+                        .fa-user{
+                            transition: all linear .3s;
+                        }
+                        &:hover .fa-user{
+                            color:var(--theme-deafult);
+                        }
+                        a{
+                        color: #999;
+                        font-size: 14px;
+                        transition: all linear .3s;
+                        .log{
+                            font-size: 10px;
+                            margin-left: 10px;
+                        }
+                        &:hover{
+                            color:var(--theme-deafult);
+                        }
+
+                        }
+                    }
+                    li.log_inout{
+                        position: relative;
+                        &:hover .acclog{
+                            opacity: 1;
+                            visibility: visible;
+                            top: 100%;
+                        }
+                        .acclog{
+                            display: block;
+                            text-align: left;
+                            min-width: 140px;
+                            padding: 10px 0 50px 10px;
+                            margin: 0;
+                            position: absolute;
+                            right: 0;
+                            top:140%;
+                            background: rgb(255, 255, 255);
+                            box-shadow: 0 2px 10px 1px #ebebeb;
+                            z-index: 20;
+                            transition: all linear .3s;
+                            opacity: 0;
+                            visibility: hidden;
+                            .log2{
+                                display: block;
+                                margin: 0;
+                                padding: 5px 7px;
+                                a{
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color:#595959;
+                                    line-height: 21px;
+                                    cursor: pointer;
+                                    transition: all linear .3s;
+                                    &:hover{
+                                        color:var(--theme-deafult);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

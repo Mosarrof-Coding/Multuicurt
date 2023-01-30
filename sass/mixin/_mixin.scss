@@ -1,0 +1,172 @@
+@import "../variable/variable";
+
+@mixin Ccmn-btn{
+    padding: 13px 30px;
+    color: #fff!important;
+    letter-spacing: .05em;
+    border: 2px solid var(--theme-deafult)!important;
+    background-image: linear-gradient(30deg,#ff4c3b 50%,transparent 50%);
+    background-size: 852px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0;
+    transition: background .3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    &:hover{
+        background-size: 0px;
+        color: #000 !important;
+    }
+} 
+@mixin Ccmn-btn-cart{
+    padding: 7px 25px;
+    color: #fff!important;
+    letter-spacing: .05em;
+    border: 2px solid var(--theme-deafult)!important;
+    background-image: linear-gradient(30deg,#ff4c3b 50%,transparent 50%);
+    background-size: 852px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0;
+    transition: background .3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    &:hover{
+        background-size: 0px;
+        color: #000 !important;
+    }
+} 
+@mixin Ccmn-btn-sasscribe{
+    padding: 13px 29px;
+    color: #fff!important;
+    letter-spacing: .05em;
+    border: 2px solid var(--theme-deafult)!important;
+    background-image: linear-gradient(30deg,#ff4c3b 50%,transparent 50%);
+    background-size: 850px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0;
+    transition: background .3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    &:hover{
+        background-size: 0px;
+        color: #000 !important;
+    }
+} 
+@mixin Aafter{
+    position: absolute;
+    left: 50%;
+    top:120%;
+    transform: translateX(-50%);
+    content: "";
+    width: 70px;
+    height: 15%;
+    background: red;
+    z-index: 5;
+}
+@mixin drp-menu{
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 99;
+    width: 160%;
+    padding: 25px 8px 40px 30px;
+    box-shadow: 0 0 10px #ebebeb;
+    min-width: 220%;
+    .drp-li{
+        margin-bottom: 10px;
+        transition:all linear .3s;
+        display: flex;
+        justify-content: space-between;
+        a{
+            font-size: 14px;
+            font-weight: 400;
+            color:#222;
+            letter-spacing:0.07em;
+            text-transform: capitalize;
+            position: relative;
+            display: inline-block;
+            &::after{
+                width: 0;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: -2%;
+                content: "";
+                background: var(--theme-deafult);
+                transition: all linear .3s;
+            }
+        }
+        &:hover{
+            a{
+                color:var(--theme-deafult);
+            }
+            i{
+                color:var(--theme-deafult);
+            }
+            ::after{
+                width: 90%;
+            }
+           
+        }
+        i{
+            font-size: 10px;
+            padding-top: 6px;
+        }
+    }
+}
+@mixin new-product{
+    .overlay-circle{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--theme-deafult);
+        position: absolute;
+        left: 2%;
+        top:2%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .new-txt{
+            display: block;
+            font-size: 13px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 0;
+        }
+    }
+}
+@mixin on-sale{
+    .on-sale{
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        .add-{
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            transform: rotate(-180deg);
+            letter-spacing: .1em;
+            color: #212529;
+        }
+    }
+}

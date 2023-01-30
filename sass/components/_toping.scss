@@ -1,0 +1,31 @@
+/* bottom to top ----------*/
+@import "../variable/variable";
+.toping{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--theme-deafult);
+    position: fixed;
+    right: 1.7%;
+    bottom: 9%;
+    display:grid;
+    place-items: center;
+    z-index: 99;
+    transition: all linear .4s;
+    opacity: 0;
+    visibility: hidden;
+    i{
+        line-height: .2;
+        color: #fff;
+        transition: all linear .4s;
+        display: block;
+    }
+}
+.top{
+    opacity: 1;
+    visibility: visible;
+    bottom:12%;
+    i{
+        line-height: .7;
+    }
+}

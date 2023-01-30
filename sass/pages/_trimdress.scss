@@ -1,0 +1,673 @@
+@import "../mixin/mixin";
+@import "../variable/variable";
+// trim dressup--------------
+#trim{
+    .container{
+        .row_trim{
+            background: #fff;
+            .trim_hedr{
+                background: #f8f8f8;
+                padding: 30px 0;
+                display: flex;
+                justify-content: space-between;
+                .trim_lft{
+                    h4{
+                        font-size: 16px;
+                        margin: 0;
+                        color: #222;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        line-height: 1;
+                        letter-spacing: .02em;
+                    }
+                }
+                .home{
+                    text-align: right;
+                    h4{
+                        font-size: 16px;
+                        margin: 0;
+                        color: #222;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        line-height: 1;
+                        letter-spacing: .02em;
+                    }
+                }
+            }
+            .trim_var{
+                padding: 70px 0;
+                width: 100%;
+                background: rgb(255, 255, 255);
+                .trim3{
+                    background: fixed;
+                    padding-right: 12px;
+                    .trim_category{
+                        width: 100%;
+                        background: rgb(104, 220, 175);
+                        margin-bottom: 20px;
+                        border: 1px dotted #000;
+                        .trim_inner{
+                            width: 100%;
+                            padding: 30px;
+                            background: #64a1c1;
+                            height: 100%;
+                            
+                            .trimh3{
+                                width: 100%;
+                                background: #e0f;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .trimul{
+                                width: 100%;
+                                max-height: 200px;
+                                margin-top: 30px;
+                                overflow-y: scroll;
+                                transition: all .3s;
+                                // animation: trimtgle .3s linear;
+                                .trimli{
+                                    display: block;
+                                    margin: 0 0 10px 0;
+                                    a{
+                                        font-size: 16px;
+                                        text-transform: capitalize;
+                                        line-height: 18px;
+                                        color: #777;
+                                    }
+                                }
+                            }
+                            // @keyframes trimtgle {
+                            //     0%{
+                            //         transform: scaleY(0);
+                            //     }
+                            //     100%{
+                            //         transform: scaleY(1);
+                            //     }
+                            // }
+                        }
+                    }
+                    .trim_supprot{
+                        width: 100%;
+                        background: rgb(88, 156, 176);
+                        margin-bottom: 20px;
+                        padding: 30px 30px 10px 30px;
+                        border: 1px dashed #b5b5b5;
+                        .shipping{
+                            width: 100%;
+                            background: #3ee;
+                            border-bottom: 1px solid #000;
+                            display: flex;
+                            align-items: center;
+                            padding-bottom: 20px;
+                            margin-bottom: 20px;
+                            .svan4{
+                                i{
+                                    font-size: 40px;
+                                    margin-right: 10px;
+                                    color:#d77c79
+                                }
+                            }
+                            .stext4{
+                                h4{
+                                    background: transparent;
+                                }
+                                h5{
+                                    background:transparent;
+                                }
+                            }
+                        }
+                    }
+                    .trim_slider{
+                        background: #00f4ea;
+                        padding-right: 30px;
+                        .nprduct{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-bottom: 1px solid #000;
+                            padding: 8px 0;
+                            background: blueviolet;
+                            i{
+                                font-size: 20px;
+                                color: #222;
+                                opacity: .6;
+                                margin-left: 10px;
+                                cursor: pointer;
+                            }
+                            .trmh4{
+                                display: inline-block;
+                                font-size: 16px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                color: #222;
+                                line-height: 24px;
+                                letter-spacing: .05em;
+                                margin: 0;
+                            }
+                        }
+                        .timplate{
+                            display: block;
+                            .item_pass{
+                                display: block;
+                                background: #15b300;
+                                .tim{
+                                    display: flex;
+                                    justify-content: start;
+                                    align-items: center;
+                                    padding: 15px 15px 15px 0!important;
+                                    .tim_img{
+                                        display:block;
+                                        width: 110px;
+                                        height: 160px;
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .tim_txt{
+                                        display:block;
+                                        margin-left: 10px;
+                                        .txt_link5{
+                                            background: burlywood;
+                                            .belfont{
+                                                display: block;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #777;
+                                                line-height: 24px;
+                                            }
+                                            .offer_49{
+                                                display: block;
+                                                h4{
+                                                    color:#3e3e3e;
+                                                    .delete{
+                                                        font-size: 14px;
+                                                        color: #aaa;
+                                                        font-weight: 400;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .trim9{
+                    display: flex;
+                    background: rgb(255, 255, 255);
+                    .trim6{
+                        .baby1{
+                            display: block;
+                            width: 500px;
+                            height: 680;
+                            margin: 0 auto;
+                            img{
+                                width:100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .baby1_slider{
+                            height: 250px;
+                            background: rgb(255, 255, 255);
+                            display: flex;
+                            padding: 3px;
+                            .babybtn{
+                                width: 150px;
+                                height: 215px;
+                                padding: 1px 5px;
+                                
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    border: 1px solid #550;
+                                }
+                            }
+                        }
+
+                    }
+                    .trim_6{
+                        padding-left: 12px;
+                        background: rgb(164, 228, 219);
+                        .trim_text{
+                            background: rgb(121, 188, 190);
+                            padding-bottom: 20px;
+                            border-bottom: 1px dashed #dddddd;
+                            h4{
+                                font-size: 20px;
+                                color: #222;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                line-height: 1;
+                                letter-spacing: .02em;
+                            }
+                            h5{
+                                .parcnt40{
+                                    padding: 0 5px;
+                                    color:#d30;
+                                }
+                            }
+                            h2{
+                                margin-bottom: 20px;
+                            }
+                            .ulclk{
+                                display: flex;
+                                justify-content: left;
+                                gap: 10px;
+                                padding-bottom: 10px;
+                                .tikmark{
+                                    height: 30px;
+                                    width: 30px;
+                                    border-radius: 50%;
+                                    border: 1px solid red;
+                                    cursor: pointer;
+                                    display: block;
+                                    text-align: center;
+                                }
+                            }
+                            .hurray{
+                                padding: 0;
+                            }
+                            .range{
+                                height: 10px;
+                                display: block;
+                                width: 100%;
+                                background: #e0e0e0;
+                                border-radius: 35px;
+                                .ovrang{
+                                    display: block;
+                                    width: 90%;
+                                    height: 100%;
+                                    background: #15b300;
+                                    border-radius:inherit;
+                                }
+                            }
+                        }
+                        .trim_stk_btn{
+                            background: pink;
+                            border-bottom: 1px dashed #e9ecef;
+                            padding-bottom: 20px;
+                            .xl_size{
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 10px 0;
+                                background: #3ee;
+                                .ssiz{
+                                    color: #222;
+                                    text-transform: capitalize;
+                                    font-weight: 700;
+                                    margin-bottom: 0;
+                                }
+                                .schrt{
+                                    color: #222;
+                                    text-transform: capitalize;
+                                    font-weight: 700;
+                                    margin-bottom: 0;
+                                }
+                            }
+                            .SML_btn{
+                                padding: 10px 0;
+                                background: #ffffff;
+                                .shadow_btn{
+                                    height: 35px;
+                                    width: 35px;
+                                    border-radius: 50%;
+                                    margin-right: 10px;
+                                    cursor: pointer;
+                                    border: 1px solid #f7f7f7;
+                                    text-align: center;
+                                    .a3{
+                                        color: #222;
+                                        font-size: 18px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        height: 100%;
+                                    }
+                                }
+                                .shadow_btn.active{
+                                    box-shadow: 1px 1px 3px #77777769;
+                                    background: #f7f7f7;
+                                }
+                            }
+                            .InStock{
+                                display: block;
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: var(--theme-deafult);
+                                line-height: 24px;
+                                letter-spacing: .05em;
+                                margin: 10px 0;
+                            }
+                            .Quantity{
+                                display: block;
+                                margin: 7px 0;
+                                color: #222;
+                                text-transform: capitalize;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                            .table3{
+                                display: inline-flex;
+                                width: unset;
+                                border: 1px solid #d3d3d3;
+                                .ifont{
+                                    font-size: 14px;
+                                    padding: 12px 8px;
+                                    border: none;
+                                    background: transparent;
+                                }
+                                input{
+                                    width: 80px;
+                                    text-align: center;
+                                    outline: none;
+                                    background: #e9ecef;
+                                    background-clip: padding-box;
+                                    border: none;
+                                    border-left: 1px solid #ced4da;
+                                    border-right: 1px solid #ced4da;
+                                }
+                            }
+                            .cart_div{
+                                display: block;
+                                .crtbutton{
+                                    margin-right: 15px;
+                                    @include Ccmn-btn-cart;
+                                }
+                            }
+                        }
+                        .Prodct_details{
+                            padding: 15px 0;
+                            border-bottom: 1px dashed #e9ecef;
+                            h5{
+                                color: #222;
+                                text-transform: capitalize;
+                                font-weight: 700;
+                                margin-bottom: 0;
+                                font-size: 14px;
+                                line-height: 24px;
+                            }
+                            .pdtail{
+                                font-size: 14px;
+                                color: #777;
+                                line-height: 21px;
+                                letter-spacing: .03em;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
+                        .shareit{
+                            padding: 15px 0;
+                            border-bottom: 1px dashed #e9ecef;
+                            h5{
+                                color: #222;
+                                text-transform: capitalize;
+                                font-weight: 700;
+                                margin-bottom: 0;
+                            }
+                            .icon_t{
+                                display: inline-flex;
+                                justify-content:start;
+                                gap:20px;
+                                padding-right: 10px;
+                                border-right: 1px solid #8d8d8d;
+                                margin-top: 5px;
+                                i{
+                                    font-size: 18px;
+                                    color: #6f6f6f;
+                                    transition: all linear .3s;
+                                    &:hover{
+                                        color: var(--theme-deafult);
+                                    }
+                                }
+                            }
+                            .icon_heart{
+                                padding-left: 10px;
+                                display: inline-flex;
+                                align-items: center;
+                                gap:20px;
+                            }
+                        }
+                        .t_counter{
+                            padding: 15px 0;
+                            border-bottom: 1px dashed #e9ecef;
+                            h4{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .custmr_revew{
+                        background: rgb(149, 181, 226);
+                        display: block;
+                        padding: 0 0 0 12px;
+                        .d_ancor{
+                            border-bottom: 1px solid #767676;
+                            .btn5a{
+                                display: inline-block;
+                                padding: 0 15px 20px;
+                                text-transform: uppercase;
+                                border: 0;
+                            }
+                            .btn5a.active{
+                                color:var(--theme-deafult);
+                                position: relative;
+                                &::after{
+                                    width: 75%;
+                                    height: 5%;
+                                    background: var(--theme-deafult);
+                                    position: absolute;
+                                    content: "";
+                                    left: 50%;
+                                    top: 98%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                        }
+                        .dsply3{
+                            margin: 15px 0;
+                            width: 100%;
+                            background: rgb(255, 255, 255);
+                            .demo{
+                                display: block;
+                                p{
+                                    line-height: 26px;
+                                    letter-spacing: .01em;
+                                    font-size: 14px;
+                                    color: #777;
+                                }
+                            }
+                            .demo{
+                                display: none;
+                            }
+                            .demo.active{
+                                width: 100%;
+                                display: block;
+                                .live_rating{
+                                    display: flex;
+                                    justify-content: space-between !important;
+                                    padding-right: 0 !important;
+                                    label{
+                                        padding-bottom: 10px;
+                                        h4{
+                                            color:#4b4b4b;
+                                            display: inline-block;
+                                        }
+                                        span.str{
+                                            margin-left: 10px;
+                                            color:#d30;
+                                            font-size: 18px;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                    .register{
+                                        label{
+                                            display: block;
+                                        }
+                                        input{
+                                            display: block;
+                                            width: 100%;
+                                            border-color: #ddd;
+                                            font-size: 15px;
+                                            padding: 15px 25px;
+                                            margin-bottom: 15px;
+                                            text-align: left;
+                                            outline: 0;
+                                        }
+                                        textarea{
+                                            width: 100%;
+                                            max-height: 150px;
+                                            padding: 15px 25px;
+                                            &::placeholder{
+                                                color: rgba(221, 52, 0, 0.49);
+                                            }
+                                        }
+                                    }
+                                }
+                                .submit{
+                                    display: block;
+                                    width: unset;
+                                    a{
+                                        @include Ccmn-btn-sasscribe;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// releted products----------
+#related_product{
+    width: 100%;
+    background: #f1ace5;
+    padding-bottom: 130px;
+    .rp_heading{
+        h2{
+            color: #222;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dddada;
+            line-height: .8;
+        }
+    }
+    .rp_main{
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .main-collection{
+            background: rgb(56, 204, 249);
+            padding: 0 2px;
+            .display{
+                width: 210px;
+                height: 284px;
+                display: block;
+                position: relative;
+                a{
+                    display: block;
+                    width: 210px;
+                    height: 284px;
+                    animation: zoomin .2s linear;
+                    img.active{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    img{
+                        display: none;
+                    }
+                }
+                @include new-product;
+                @include on-sale;
+                .r-icn_ovrly{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 10%;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    .icon_right{
+                        width: 100%;
+                        height: 20%;
+                        text-align: center;
+                        .Ancr{
+                            width: 100%;
+                            height: 20%;
+                            padding: 4px 0;
+                            i{
+                                color: #6f6f6f;
+                                font-size: 18px;
+                                transition: all linear .3s;
+                                &:hover{
+                                    color:var(--theme-deafult);
+                                }
+                            }
+                            .fi-rr-shopping-cart{
+                                display: block;
+                                transform: rotateY(-180deg);
+
+                            }
+                            .fi-rr-refresh{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                &:hover .r-icn_ovrly{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .rating{
+                svg{
+                    width: 18px;
+                    height: 17px;
+                }
+                h5{
+                    color:#777;
+                }
+                h4{
+                    font-size: 18px;
+                    color: #222;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    transition: all .5s ease;
+                    span{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color:#aaa;
+                        letter-spacing: .03em;
+                    }
+                }
+            }
+            .dot-ul{
+                padding-top: 7px;
+                .lidot{
+                    display: inline-block;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 100%;
+                    margin-right: 5px;
+                    transition: all .1s ease;
+                    cursor: pointer;
+                    vertical-align: middle;
+                    background: rgb(234, 185, 185);
+                }
+                .lidot.active{
+                    background: red;
+
+                }
+            }
+        }
+    }
+}

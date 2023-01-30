@@ -1,0 +1,107 @@
+/*------------------------------------------------ blog part start--*/
+@import "../variable/variable";
+#blog{
+    padding-bottom: 65px;
+    .container{
+        .row{
+            .blog-heading{
+                text-align: center;
+                h2{
+                    position: relative;
+                    &::after{
+                        @include Aafter();
+                    }
+                }
+            }
+            .blog-store{
+                display: flex;
+                justify-content: space-between;
+                .blog-bgr{
+                    max-width: 540px;
+                    text-align: center;
+                    margin: 0 10px;
+                    .blog-item{
+                        max-width: auto;
+                        height: auto;
+                        margin-bottom: 20px;
+                        position: relative;
+                        transition:all linear .4s;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .brick-shad{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: flex;
+                        overflow: hidden;
+                        .brick{
+                            width: 25%;
+                            background: #bb1f1fae;
+                        }
+                        .br1{
+                            height: 0%;
+                            transition: all .2s steps(4);
+                        }
+                        .br2{
+                            height: 0%;
+                            transition: all .3s steps(4);
+                        }
+                        .br3{
+                            height: 0%;
+                            transition: all .4s steps(4);
+                        }
+                        .br4{
+                            height: 0%;
+                            transition: all .5s steps(4);
+                        }
+                        &:hover .brick.br1,
+                        &:hover .brick.br2,
+                        &:hover .brick.br3,
+                        &:hover .brick.br4{
+                            height: 100%;
+                        } 
+                    }
+                    h3{
+                        color: #222;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        line-height: 1.5;
+                        letter-spacing: .03em;
+                        margin-top: 10px;
+                        margin-bottom: 0;
+                        transition: all .5s ease;
+                        &:hover{
+                            color:#bb1f1f;
+                        }
+                    }
+                }
+            }
+            .art-slider{
+                display: flex;
+                padding-top: 50px;
+                .art-item{
+                    width: 275px;
+                    height: 125px;
+                    display: grid;
+                    place-items: center;
+                    img{
+                        width: 125px;
+                        height: 125px;
+                        opacity: .5;
+                        transition: all linear .3s;
+                    }
+                    &:hover img{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

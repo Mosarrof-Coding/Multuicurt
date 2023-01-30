@@ -1,0 +1,200 @@
+/*----------------------------------------- exclusive part...*/
+@import "../mixin/mixin";
+#exclusive{
+    padding: 65px 0;
+    .container{
+        .row{
+            .ex-caption{
+                text-align: center;
+                h4{
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    letter-spacing: .03em;
+                    line-height: 1;
+                    padding-bottom: 10px;
+                }
+                h2{
+                    position: relative;
+                    &::after{
+                        @include Aafter;
+                    }
+                }
+                ul.xclusive_btn{
+                    li{
+                        margin: 0 25px;
+                        cursor:help;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #2d2a25;
+                        text-transform: uppercase;
+                        transition: .3s;
+                    }
+                    li.active{
+                        color: var(--theme-deafult);
+                    }
+                }
+            }
+            .imgstore.active{
+                display: block;
+                .ex-gallery{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap:10px;
+                    margin-bottom: 10px;
+                    .main-collection{
+                        padding-top: 50px;
+                        animation: Zin .4s ease-in-out;
+                        .m-item{
+                            width: 320px;
+                            height: 435px;
+                            position: relative;
+                            cursor: pointer;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            &:hover{
+                                .min-img{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    cursor: progress;
+                                }
+                            }
+                            @include new-product;
+                            @include on-sale;
+                        }
+                        .over-item{
+                            position: absolute;
+                            right: 0%;
+                            bottom: 0;
+                            width: 10%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            .min-img{
+                                opacity: 0;
+                                visibility:hidden;
+                                i{
+                                    color:#372f2f;
+                                    font-size: 16px;
+                                    margin: 10px 0;
+                                    transition: all linear .3s;
+                                    &:hover{
+                                        color:var(--theme-deafult);
+                                    }
+                                }
+                                i.fa-cart-plus{
+                                    display: block;
+                                    transform: rotateY(-180deg);
+                                }
+                            }
+                        }
+                        .rating{
+                            svg{
+                                width: 18px;
+                                height: 17px;
+                            }
+                            h5{
+                                color:#777;
+                            }
+                            h4{
+                                font-size: 18px;
+                                color: #222;
+                                font-weight: 700;
+                                margin-bottom: 0;
+                                transition: all .5s ease;
+                                span{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color:#aaa;
+                                    letter-spacing: .03em;
+                                }
+                            }
+                        }
+                        .dot-ul{
+                            padding-top: 7px;
+                            .lidot{
+                                display: inline-block;
+                                height: 20px;
+                                width: 20px;
+                                border-radius: 100%;
+                                margin-right: 5px;
+                                transition: all .1s ease;
+                                cursor: pointer;
+                                vertical-align: middle;
+                                background: red;
+                            }
+                        }
+                        @keyframes Zin {
+                            0%{
+                                transform: scale(0%);
+                                opacity: .1;
+                            }
+                            100%{
+                                transform: scale(100%);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .imgstore{
+                display: none;
+            }
+            .open-support{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                padding: 35px 0;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                .supp-icon{
+                    flex-basis: 33.32%;
+                    padding: 25px 0;
+                    border-right: 1px solid #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap:10px;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    svg{
+                        display: block;
+                        width: 65px;
+                        height: 65px;
+                    }
+                    h4{
+                        transition: all linear .3s;
+                        color:#222;
+                    }
+                    &:hover{
+                        svg{
+                            animation: shew 1s linear;
+                        }
+                        h4{
+                            color:var(--theme-deafult);
+                        }
+                    }
+                    @keyframes shew {
+                        0%{
+                            transform: scale(1);
+                        }
+                        50%{
+                            transform: scale(1.1);
+                        }
+                        100%{
+                            transform: scale(1);
+                        }
+                    }
+                }
+                .ex-con{
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
