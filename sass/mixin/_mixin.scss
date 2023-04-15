@@ -14,7 +14,7 @@
     font-size: 14px;
     font-weight: 700;
     border-radius: 0;
-    transition: background .3s ease-in-out;
+    transition:  .3s ease-in-out;
     display: inline-block;
     margin-top: 20px;
     cursor: pointer;
@@ -22,6 +22,15 @@
         background-size: 0px;
         color: #000 !important;
     }
+} 
+@mixin Ccmn-btnres{
+    padding: 7px 20px;
+    letter-spacing: .02em;
+    background-size: 852px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 15px;
 } 
 @mixin Ccmn-btn-cart{
     padding: 7px 25px;
@@ -60,7 +69,7 @@
     font-size: 14px;
     font-weight: 700;
     border-radius: 0;
-    transition: background .3s ease-in-out;
+    transition: background .2s ease-in-out;
     display: inline-block;
     margin-top: 20px;
     cursor: pointer;

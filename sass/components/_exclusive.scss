@@ -1,4 +1,4 @@
-/*----------------------------------------- exclusive part...*/
+/*--- exclusive part...*/
 @import "../mixin/mixin";
 #exclusive{
     padding: 65px 0;
@@ -47,7 +47,7 @@
                         padding-top: 50px;
                         animation: Zin .4s ease-in-out;
                         .m-item{
-                            width: 320px;
+                            max-width: 320px;
                             height: 435px;
                             position: relative;
                             cursor: pointer;
@@ -65,6 +65,14 @@
                             }
                             @include new-product;
                             @include on-sale;
+                            a{
+                                .xclusiv_dimg{
+                                    display: none;
+                                }
+                                .xclusiv_dimg.active{
+                                    display: block;
+                                }
+                            }
                         }
                         .over-item{
                             position: absolute;
@@ -126,7 +134,22 @@
                                 transition: all .1s ease;
                                 cursor: pointer;
                                 vertical-align: middle;
-                                background: red;
+                            }
+                            .disc1{
+                                background: #5653a4;
+                            }
+                            .disc2{
+                                background: #ffffff;
+                                border: 1px solid #626262;
+                            }
+                            .disc3{
+                                background: #d31b99;
+                            }
+                            .disc4{
+                                background: #d7cb46;
+                            }
+                            .disc5{
+                                background: #de0404;
                             }
                         }
                         @keyframes Zin {
@@ -149,6 +172,7 @@
                 margin-top: 50px;
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
                 padding: 35px 0;
                 border-top: 1px solid #ddd;
                 border-bottom: 1px solid #ddd;

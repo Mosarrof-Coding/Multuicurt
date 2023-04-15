@@ -1,7 +1,9 @@
 /* -------banner part--------*/
 @import "../mixin/mixin";
-.banner{
-    .slider-img{
+@import "../variable/variable";
+/* for banner part--------*/
+#banner{
+    .ban_slider{
         position: relative;
         .prv_arr{
             width: 50px;
@@ -42,67 +44,36 @@
             opacity: 0;
             visibility: hidden;
         }
-        .man-bacg{
+        .BannerSlider_item{
             background: url(../images/bac-man.jpg) no-repeat center/cover;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            padding: 200px 0;
-            .container{
-                .mheading{
-                    float:left;
-                    text-align: center; 
-                    h4{
-                        font-size: 18px;
-                        font-weight: 700;
-                        letter-spacing: .4em;
-                        color: #777;
-                        text-transform: capitalize;
-                    }
-                    h1{
-                        font-size: 60px;
-                        color: #222;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        margin-top: 10px;
-                    }
-                    a{
-                        @include Ccmn-btn();
-                    }
+            .banner_caption{
+                text-align: center;
+                width: 530px;
+                padding: 220px 0;
+                .first_h4{
+                    font-weight: 700;
+                    letter-spacing: .4em;
+                    color: #777;
+                    margin-bottom: 0;
+                    margin-top: -3px;
+                    font-size: 18px;
+                    text-transform: capitalize;
+                }
+                .first_h1{
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    font-size: 60px;
+                    color: #222;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .first_anchore{
+                    @include Ccmn-btn;
                 }
             }
         }
-        .wman-bacg{
+        .Wmn{
             background: url(../images/bac-wmn.jpg) no-repeat center/cover;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            padding: 202px 0;
-            .container{
-                .wmnheading{
-                    float: left;
-                    text-align: center;
-                    h4{
-                        font-size: 18px;
-                        font-weight: 700;
-                        letter-spacing: .4em;
-                        color: #777;
-                        margin-bottom: 0;
-                        margin-top: -3px;
-                        text-transform: capitalize;
-                    }
-                    h1{
-                        font-size: 60px;
-                        color: #222;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        margin-top: 10px;
-                    }
-                    a{
-                        @include Ccmn-btn;
-                    }
-                }
-            }
         }
         &:hover{
             .prv_arr{
@@ -119,73 +90,19 @@
             }
         }
     }
+
 }
 
-/* -------banner part--------*/
-.banner{
+/* -for vegetable link page-----*/
+#banner{
     margin-bottom: 50px;
-    .slider-img.vegetable{
-        .man-bacg{
-            background: url(../images/vegetable2.jpg) no-repeat center/cover;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            padding: 210px 0;
-            .container{
-                .mheading{
-                    float:left;
-                    text-align: center; 
-                    h4{
-                        font-size: 18px;
-                        font-weight: 700;
-                        letter-spacing: .4em;
-                        color: #777;
-                        text-transform: capitalize;
-                    }
-                    h1{
-                        font-size: 60px;
-                        color: #222;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        margin-top: 10px;
-                    }
-                    a{
-                        @include Ccmn-btn();
-                    }
-                }
-            }
-        }
-        .wman-bacg{
+    .ban_slider.vegetable{
+        position: relative;
+        .BannerSlider_item{
             background: url(../images/vegetable.jpg) no-repeat center/cover;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            padding: 212px 0;
-            .container{
-                .wmnheading{
-                    float: left;
-                    text-align: center;
-                    h4{
-                        font-size: 18px;
-                        font-weight: 700;
-                        letter-spacing: .4em;
-                        color: #777;
-                        margin-bottom: 0;
-                        margin-top: -3px;
-                        text-transform: capitalize;
-                    }
-                    h1{
-                        font-size: 60px;
-                        color: #222;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        margin-top: 10px;
-                    }
-                    a{
-                        @include Ccmn-btn;
-                    }
-                }
-            }
+        }
+        .Wmn{
+            background: url(../images/vegetable2.jpg) no-repeat center/cover;
         }
     }
 }

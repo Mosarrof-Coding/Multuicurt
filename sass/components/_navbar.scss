@@ -6,6 +6,9 @@
     z-index: 99;
     background: #fff;
     padding: 2px 0;
+    .right_nav_sm{
+        display: none;
+    }
     .navbar{
         .container{
             .navbar-brand{
@@ -370,6 +373,139 @@
             }
         }
     }
+    .sm_mdNave{
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        display: block;
+        background: #ffffff;
+        padding: 0px 0 20px 0;
+        z-index: 999;
+        transition: all linear .5s;
+        border:1px solid #ddd;
+        border-right:none;
+        .faBarsButton{
+            display: block;
+            text-align:right;
+            width: 100%;
+            padding:15px 5% 15px 0;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            i{
+                font-size: 16px;
+                margin-left: 20px;
+            }
+        }
+        .sm-md-navbar{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 0 20px 0px;
+            
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 10px;
+                
+                a{
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 21px;
+                    text-transform: capitalize;
+                    color:#333;
+                }
+                i{
+                    font-size: 14px;
+                }
+                &:hover{
+                    background: #ddd;
+                    a{
+                        color: red;
+                    }
+                    i{
+                        color:red;
+                    }
+                }
+            }
+            .capture-flyer{
+                position: relative;
+                .fly-new{
+                    position: absolute;
+                    left: 0;
+                    top: -80%;
+                    display: block;
+                    text-align: center;
+                    padding: 3px 4px 2px 4px;
+                    background: red;
+                    color:#fff;
+                    font-size: 10px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: .03rem;
+                }
+                &::after{
+                    position: absolute;
+                    left: 3%;
+                    top: -20%;
+                    content: "";
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 6px solid red;
+                    z-index: 9;
+                }
+            }
+            .nav-li-item{
+                overflow-x: scroll;
+                padding: 0;
+                .toggleFunck{
+                    display: none;
+                }
+                .toggleFunck.active{
+                    display: block;
+                    max-height: 100px;
+                    width: 100%;
+                    li{
+                        background: #e9e9e9;
+                        a{
+                            font-weight: 300;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile-view{
+        display: none;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        background: $black3;
+        line-height: 1;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            li{
+                a{
+                    i{
+                        font-size: 25px;
+                        color:$black9;
+                        padding: 10px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 #navbar.sticky{
     width: 100%;
@@ -542,8 +678,7 @@
 // right canvs-------------
 #right-canv{
     .accordion{
-        .accordion-item
-        {
+        .accordion-item{
             .accordion-collapse{
                 .accordion-body{
                     display: flex;
@@ -676,6 +811,7 @@
             i{
                 padding-right: 10px;
                 font-size: 16px;
+               
             }
             .rcLi{
                 display: block;

@@ -1,0 +1,46 @@
+@import "../mixin/mixin";
+#compare{
+    .compare_header{
+        padding: 30px 0;
+        background: #f8f8f8;
+        .compmain{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4{
+                font-size: 16px;
+                margin-bottom: 0;
+                color: #222;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: .02em;
+            }
+        }
+    }
+    .comparison{
+        width: 100%;
+        padding: 30px 0;
+        ul{
+            border: 1px solid #ddd;
+            border-bottom: none;
+            li{
+                display: flex;
+                border-bottom: 1px solid #ddd;
+                align-items: center;
+                .twoprcnt{
+                    flex-basis: 20%;
+                    padding: 0 10px;
+                }
+                .eightyPrcnt{
+                    flex-basis: 80%;
+                    border-left: 1px solid #ddd;
+                    padding: 20px 10px;
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

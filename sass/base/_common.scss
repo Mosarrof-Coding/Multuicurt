@@ -24,6 +24,7 @@ h1{
     color: #222;
     font-weight: 700;
     text-transform: uppercase;
+    // background: red;
 }
 h2{
     font-size: 36px;
@@ -33,21 +34,61 @@ h2{
     line-height: 1;
     letter-spacing: .02em;
     margin-bottom: 30px;
+    // background: green;
+
 }
 h4{
     font-size: 18px;
     color: var(--theme-deafult);
     letter-spacing: .1em;
     text-transform: capitalize;
+    // background: yellow;
 }
 h5{
     font-size: 16px;
     color:#777;
     line-height: 24px;
     font-weight: 400;
+    // background: dark;
 }
 p{
     padding-bottom: 30px;
     line-height: 24px;
     letter-spacing: .05em;
+    // background: cadetblue;
 }
+body.dark{
+    background: #222;
+    accent-color: #fff;
+}
+
+.hgfr{
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    z-index: 999;
+    pointer-events: none;
+    animation: nice .5s ease-out forwards;
+    display: none;
+}
+@keyframes nice {
+    0%{
+        transform: scale(0);
+    }
+    90%{
+        transform: scale(3);
+        background:radial-gradient(#ffffff 50%,#c40000);
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+html,body{
+    overflow-x: hidden;
+}
+

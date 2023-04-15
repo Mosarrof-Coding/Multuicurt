@@ -9,6 +9,7 @@
                 border-bottom: 1px solid rgb(228, 228, 228);
                 padding: 35px 0;
                 display: flex;
+                flex-wrap: wrap;
                 .n-left{
                     flex-basis: 50%;
                     border-right: 1px solid #eaeaea;
@@ -53,7 +54,11 @@
             .footer-body{
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 padding: 60px 0;
+                .ab_out{
+                    display: none;
+                }
                 .footer-logo{
                     flex-basis: 33%;
                     padding: 0 12px 0 0;
@@ -169,14 +174,10 @@
         padding: 23px 0;
         .container{
             .copy-main{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 .copyright{
-                    display: flex;
-                    flex-basis: 30%;
+                    width: 100%;
                     p{
+                        display: block;
                         color: #777;
                         font-size: 14px;
                         letter-spacing: .03em;
@@ -185,9 +186,8 @@
                     }
                 }
                 .visa-card{
-                    flex-basis: 30%;
-                    display: flex;
-                    justify-content: right;
+                    width: 100%;
+                    text-align: right;
                     img{
                         margin-left: 10px;
                         display: inline-block;

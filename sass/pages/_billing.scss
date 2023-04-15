@@ -1,0 +1,255 @@
+@import "../mixin/mixin";
+@import "../variable/variable";
+/*subpage woman stylish fashion part------------------*/
+#billing{
+    .billing_header{
+        padding: 30px 0;
+        background: #f8f8f8;
+        .container{
+            .row{
+                .col-lg-12{
+                    .sWmain{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h4{
+                            font-size: 16px;
+                            margin-bottom: 0;
+                            color: #222;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            line-height: 1;
+                            letter-spacing: .02em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bil_main{
+        width: 100%;
+        padding: 50px 0;
+        h3{
+            font-size: 24px;
+            color: #444;
+            font-weight: 700;
+            letter-spacing: .03rem;
+            margin-bottom: 20px;
+        }
+        .bill_form{
+            width: 100%;
+            display: block;
+            form{
+                .binput_div{
+                    position: relative;
+                    label{
+                        display: block;
+                        width: 100%;
+                        padding: 7px 0;
+                    }
+                    input{
+                        width: 100%;
+                        padding: 0 22px;
+                        height: 45px;
+                        border: 1px solid #dddddd;
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        display: block;
+                        margin-bottom: 20px;
+                        position: absolute;
+                        top: 53%;
+                        right: 1%;
+                        i{
+                            background: pink;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            font-size: 15px;
+                            color:#fff;
+                            display: grid;
+                            place-items: center;
+                        }
+                    }
+                }
+                .binput_div12{
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    label{
+                        display: block;
+                        width: 100%;
+                        line-height: 20px;
+                        padding: 7px 0;
+                    }
+                    input{
+                        display: block;
+                        width: 100%;
+                        padding: 0 22px;
+                        height: 45px;
+                        border: 1px solid #dddddd;
+                        margin-bottom: 10px;
+                    }
+                    select{
+                        width: 100%;
+                        padding: 0 22px;
+                        height: 45px;
+                        border: 1px solid #dddddd;
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        display: block;
+                        position: absolute;
+                        top: 53%;
+                        right: 1%;
+                        i{
+                            background: pink;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            font-size: 15px;
+                            color:#fff;
+                            display: grid;
+                            place-items: center;
+                        }
+                    }
+                }
+                a{
+                    margin-top: 5px !important;
+                    margin-bottom: 15px !important;
+                    padding: 7px 30px !important;
+                    @include Ccmn-btn-cart;
+                }
+            }
+            .cartNumber{
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                background: #f9f9f9;
+                padding: 15px;
+                border: 1px solid #dddddd;
+                h5{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #222;
+                    line-height: 24px;
+                    letter-spacing: .05em;
+                    text-transform: uppercase;
+                }
+                h4{
+                    color: #4f4f4f;
+                    font-weight: 400;
+                    font-size: 16px;
+                    letter-spacing: .05em;
+                    text-transform: uppercase;
+                    display:flex;
+                    justify-content: space-between;
+                    padding-bottom: 8px;
+                    span{
+                        color:#a3a3a3;
+                        border-bottom: 1px solid #ddd;
+                    }
+                }
+            }
+
+        }
+        .bill_total_cost{
+            padding:40px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            .product_voucher{
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+                padding: 10px 0;
+                h5{
+                    display: flex;
+                    justify-content: space-between;
+                    color: #444;
+                    font-weight: 500;
+                    font-size: 22px;
+                }
+                h4{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    color:#555;
+                    margin: 10px 0;
+                    font-size: 15px;
+                    color: #444;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                    span{
+                        width: unset;
+                        font-size: 20px;
+                    }
+                    .labelInputflex{
+                        display: block;
+                        .ssipe{
+                            display: block;
+                            text-align: right;
+                            input{
+                                margin-top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+            .voucher_ttal{
+                width: 100%;
+                padding: 10px 0;
+                h5{
+                    display: flex;
+                    justify-content: space-between;
+                    color: #444;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+            .ppal{
+                display: block;
+                width: unset;
+                img{
+                    width: auto;
+                }
+            }
+            .placeorder{
+                display: block;
+                text-align: right;
+                a{
+                    @include Ccmn-btn;
+                }
+
+            }
+        }
+        .discsong{
+            width: 100%;
+            display: grid;
+            place-items: center;
+            padding: 50px 0;
+            .circling{
+                width: 500px;
+                height: 500px;
+                border-radius: 50%;
+                display: grid;place-items: center;
+                background: repeating-radial-gradient(red,pink,#0404ac,#f22592);
+                .circling{
+                    width: 6px;
+                    height: 500px;
+                    border-radius: 10px;
+                    animation: run 60s steps(60) infinite;
+                    background: linear-gradient(red 70%,#ffffff00 30%);
+                }
+                @keyframes run {
+                    0%{
+                        transform: rotate(0deg);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
