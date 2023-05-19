@@ -405,7 +405,7 @@ $(function(){
 });
     // let meminus = document.querySelector('.faminus');
     // let dnoneminus = document.querySelector('.popboard');
-    // meminus.onclick = function(){
+    // meminus.onclick = ()=>{
     //     dnoneminus.style.display = 'none';
     // };
 
@@ -414,7 +414,7 @@ $(function(){
 //   const Sslider = document.getElementById('vol');
 //   const rup = document.getElementById('rangeup');
 //   const pSortq = document.querySelector('.p_sort');
-//   // rup.innerHTML = Sslider.value;
+//   rup.innerHTML = Sslider.value;
 
 //   Sslider.oninput = function() {
 //     rup.innerHTML = Sslider.value + '$';
@@ -547,6 +547,7 @@ firstbtn.map((item, index)=> {
 });
 
 // voucher pass validation------------------
+
 // let fname_err= document.querySelector('.fame_err');
 // let lname_err= document.querySelector('.lname_err');
 // let phone_err= document.querySelector('.phone_err');
