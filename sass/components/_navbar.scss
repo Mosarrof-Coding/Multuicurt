@@ -79,6 +79,9 @@
                         .drpUl{
                             opacity: 0;
                             visibility: hidden;
+                            transform-origin: center top 0;
+                            transform: scaleY(0);
+                            transition: all linear .3s;
                             @include drp-menu;
                             .drp-li.cat-li-rel{
                                 position: relative;
@@ -130,6 +133,7 @@
                         &:hover .drpUl{
                             opacity: 1;
                             visibility: visible;
+                            transform: scaleY(1);
                         }
                     }
                     .drp-mnu1{
@@ -138,10 +142,14 @@
                             opacity: 0;
                             visibility: hidden;
                             @include drp-menu;
+                            transform-origin: center top 0;
+                            transform: scaleY(0);
+                            transition: all linear .3s;
                         }
                         &:hover .drpUl-1{
                             opacity: 1;
                             visibility: visible;
+                            transform: scaleY(1);
                         }
                     }
                     .drp-mnu2{
@@ -150,10 +158,14 @@
                             opacity: 0;
                             visibility:hidden;
                             @include drp-menu;
+                            transform-origin: center top 0;
+                            transform: scaleY(0);
+                            transition: all linear .3s;
                         }
                         &:hover .drpUl-2{
                             opacity: 1;
                             visibility: visible;
+                            transform: scaleY(1);
                         }
                     }
                     .drp-mnu3{
@@ -227,6 +239,9 @@
                             opacity: 0;
                             visibility:hidden;
                             @include drp-menu;
+                            transform-origin: center top 0;
+                            transform: scaleY(0);
+                            transition: all linear .3s;
                             li a.new{
                                 position: relative;
                                 display: inline-block;
@@ -243,6 +258,7 @@
                         &:hover .drpUl-4{
                             opacity: 1;
                             visibility: visible;
+                            transform: scaleY(1);
                         }
                     }
                     .drp-mnu5{

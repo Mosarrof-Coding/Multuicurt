@@ -432,6 +432,9 @@ html, body {
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu .drpUl {
   opacity: 0;
   visibility: hidden;
+  transform-origin: center top 0;
+  transform: scaleY(0);
+  transition: all linear 0.3s;
   background: rgb(255, 255, 255);
   position: absolute;
   left: 0;
@@ -529,6 +532,7 @@ html, body {
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu:hover .drpUl {
   opacity: 1;
   visibility: visible;
+  transform: scaleY(1);
 }
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu1 {
   position: relative;
@@ -545,6 +549,9 @@ html, body {
   padding: 25px 8px 40px 30px;
   box-shadow: 0 0 10px #ebebeb;
   min-width: 220%;
+  transform-origin: center top 0;
+  transform: scaleY(0);
+  transition: all linear 0.3s;
 }
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu1 .drpUl-1 .drp-li {
   margin-bottom: 10px;
@@ -587,6 +594,7 @@ html, body {
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu1:hover .drpUl-1 {
   opacity: 1;
   visibility: visible;
+  transform: scaleY(1);
 }
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu2 {
   position: relative;
@@ -603,6 +611,9 @@ html, body {
   padding: 25px 8px 40px 30px;
   box-shadow: 0 0 10px #ebebeb;
   min-width: 220%;
+  transform-origin: center top 0;
+  transform: scaleY(0);
+  transition: all linear 0.3s;
 }
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu2 .drpUl-2 .drp-li {
   margin-bottom: 10px;
@@ -645,6 +656,7 @@ html, body {
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu2:hover .drpUl-2 {
   opacity: 1;
   visibility: visible;
+  transform: scaleY(1);
 }
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu3 {
   position: relative;
@@ -725,6 +737,9 @@ html, body {
   padding: 25px 8px 40px 30px;
   box-shadow: 0 0 10px #ebebeb;
   min-width: 220%;
+  transform-origin: center top 0;
+  transform: scaleY(0);
+  transition: all linear 0.3s;
 }
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu4 .drpUl-4 .drp-li {
   margin-bottom: 10px;
@@ -779,6 +794,7 @@ html, body {
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu4:hover .drpUl-4 {
   opacity: 1;
   visibility: visible;
+  transform: scaleY(1);
 }
 #navbar .navbar .container .collapse .navbar-nav .drp-mnu5 {
   position: relative;
