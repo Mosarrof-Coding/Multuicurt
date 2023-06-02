@@ -47,10 +47,11 @@
         .BannerSlider_item{
             background: url(../images/bac-man.jpg) no-repeat center/cover;
             .banner_caption{
+                display: inline-block;
                 text-align: center;
-                width: 530px;
                 padding: 220px 0;
                 .first_h4{
+                    display: block;
                     font-weight: 700;
                     letter-spacing: .4em;
                     color: #777;
@@ -60,6 +61,7 @@
                     text-transform: capitalize;
                 }
                 .first_h1{
+                    display: block;
                     margin-bottom: 0;
                     margin-top: 10px;
                     font-size: 60px;

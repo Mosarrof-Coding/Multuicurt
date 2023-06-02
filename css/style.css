@@ -1450,11 +1450,12 @@ html, body {
   background: url(../images/bac-man.jpg) no-repeat center/cover;
 }
 #banner .ban_slider .BannerSlider_item .banner_caption {
+  display: inline-block;
   text-align: center;
-  width: 530px;
   padding: 220px 0;
 }
 #banner .ban_slider .BannerSlider_item .banner_caption .first_h4 {
+  display: block;
   font-weight: 700;
   letter-spacing: 0.4em;
   color: #777;
@@ -1464,6 +1465,7 @@ html, body {
   text-transform: capitalize;
 }
 #banner .ban_slider .BannerSlider_item .banner_caption .first_h1 {
+  display: block;
   margin-bottom: 0;
   margin-top: 10px;
   font-size: 60px;
